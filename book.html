@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire de Réservation</title>
     <style>
         /*****************************contenu**************************** */
-        body {
+        body {color: #8c4d4d;
             margin: 0px;
             padding: 0px;
             font-family: Arial, sans-serif;
-            background:linear-gradient(-45deg #8c4d4d,#623e38,#fff);
-            color: #8c4d4d;
-
+            background: linear-gradient(-150deg,#623e38, #7b4343,#9c5858,#a46464);
+            background-size: 30% 30%;
+            animation: hey 10s ease-in-out  infinite ;
+            
         }
+        @keyframes hey{
+            0%{background-size:0% 100%;}
+            50%{background-size:100% 0%;}
+            100%{background-size:0% 100%;}
+        }
+        
+
 
         .form-container {
             margin-left: 33%;
             margin-top: 5%;
             background: #fff;
             padding: 3rem;
-            box-shadow: 20px 10px rgba(0, 0, 0, 0.334);
+            box-shadow: 20px 10px rgba(0, 0, 0, 0.108);
             border-radius: 10px;
             width: max-content;
         }
@@ -38,9 +47,7 @@
             font-weight: bold;
         }
 
-        input,
-        select,
-        button {
+        input,select,button {
             width: 100%;
             padding: 0.8rem;
             margin-bottom: 1rem;
@@ -147,8 +154,7 @@
             <input type="text" id="prenom" placeholder="Votre prénom">
             <label for="nombre">Nombre de personnes :</label>
             <input type="number" id="nombre" min="1" max="20">
-        </form>
-    </div>
+        
             <p>Plats à réserver :</p>
             <label for="Entrées">Entrées</label>
             <input list="Entrées" placeholder="Choisissez un plat">
