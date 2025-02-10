@@ -29,6 +29,10 @@
             animation-name: titre;
             animation-duration: 10s;
             animation-iteration-count: infinite;
+            transition: transform 0.3s ease-in-out;
+        }
+        section h2:hover{
+            transform: scale(1.2);
         }
 
         @keyframes titre {
@@ -41,7 +45,7 @@
             }
 
             50% {
-                color: rgb(243, 205, 134);
+                color: #ceaa5b;
             }
 
             75% {
@@ -64,7 +68,6 @@
             box-shadow: 10px 10px rgba(0, 0, 0, 0.16);
             border-radius: 10px;
             overflow: hidden;
-            transition: transform 0.8s ease;
         }
 
         .recipe img {
@@ -84,14 +87,23 @@
             color: wheat;
             background-color: #3f2504;
             text-decoration: underline;
+            width: 25ch;
+            text-wrap: nowrap;
+            overflow: hidden;
+            animation: typing 2s steps(28) forwards infinite alternate;
         }
+
+        @keyframes typing {
+            from {
+                width: 0ch;
+            }}
 
         .recipe p {
             margin: 0 1rem 1rem;
             color: white;
             background-color: #3f2504;
         }
-
+    
         .recipe a {
             display: block;
             text-align: center;
@@ -364,14 +376,14 @@
             <h2>Salades</h2>
             <div class="recipes">
                 <div class="recipe">
-                    <img src="Saladea.jpeg" alt=" ">
+                    <img src="saladea.jpeg" alt=" ">
                     <h3>Salade Niçoise </h3>
                     <p>Une salade colorée et complète composée de thon, œufs durs, tomates, olives, haricots verts et
                         pommes de terre, souvent assaisonnée d'une vinaigrette légère.</p>
                     <a href="prices.html"> Voir les prix </a>
                 </div>
                 <div class="recipe">
-                    <img src="Saladeb.jpeg" alt=" ">
+                    <img src="saladeb.jpeg" alt=" ">
                     <h3>Salade César </h3>
                     <p>Appréciée dans les restaurants marocains, elle est composée de laitue croquante, poulet grillé,
                         croûtons, parmesan et une sauce crémeuse à base d’anchois.</p>
