@@ -6,14 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            background-color: #623e38;
+
+        body {
+            background-color: #ec2f0e;
             margin: 0;
             padding: 0;
+            background: linear-gradient(150deg,#623e38, #7b4343,#9c5858,#a46464);
+            animation: hey 10s ease-in-out  infinite ;
+            
         }
+        @keyframes hey{
+            0%{background-size:0% 100%;}
+            50%{background-size:100% 0%;}
+            100%{background-size:0% 100%;}
+        }
+        
 
         table {
-            border: 4px solid #e4c787;
+            background-color: wheat;
+            border: 8px solid #7b4343;
             color: whitesmoke;
             text-align: center;
             width: 700px;
@@ -22,12 +33,16 @@
         }
 
         th {
-            color: #e4c787;
+            border: 2px solid #623e38;
+            color: goldenrod;
+            text-decoration: underline;
             font-size: 25px;
             font-family: serif;
         }
 
         td {
+            border: 2px solid #623e38;
+            color: #ceaa5b;
             font-size: 20px;
             font-family: serif;
         }
