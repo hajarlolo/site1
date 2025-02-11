@@ -13,13 +13,18 @@
 
         form {
             font-size: 16px;
-            margin-top: 15%;
+            margin-top: 5%;
             background: #fff;
-            padding: 2rem;
+            padding: 10px;
             text-align: center;
             border-radius: 10px;
             box-shadow: 20px 10px rgba(0, 0, 0, 0.334);
             width: 45%;
+            height: auto;
+            margin-left: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         body {
@@ -27,32 +32,28 @@
             padding: 0px;
             font-family: Arial, sans-serif;
             background-color: #623e38;
-            color: #623e38;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: auto;
-            background: linear-gradient(100deg,#623e38, #7b4343,#9c5858,#a46464);
-            animation: hey 10s ease  infinite ;
-            
-        }
-        @keyframes hey{
-            0%{background-size:0% 100%;}
-            25%{background-size:100% 0%;}
-            50%{background-size:0% 100%;}
-            75%{background-size:100% 0%;}
-            100%{background-size:0% 100%;}
+            color: #834a4a;
         }
 
         form li {
             list-style-type: none;
-            float: left;
             text-align: center;
-            padding: 15px;
+            margin: 0px 15px;
         }
 
         a {
             color: #ceaa5b;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        video {
+            height: 350px;
+            padding-top: 8px;
+            width: 420px;
+            margin: 10px 0;
         }
 
         /*****************************menu**************************** */
@@ -111,31 +112,40 @@
             margin: 0;
             padding: 0 100px;
         }
-    </style>>
+    </style>
 </head>
 
 <body>
     <nav>
         <ul>
-            <img class="logo" src="logo.png">
+            <img class="logo" src="logo.png" alt="Logo">
             <li><a href="index.html">Home</a></li>
             <li><a href="book.html">Book</a></li>
             <li><a href="content.html">Menu</a></li>
         </ul>
     </nav>
     <form>
-        <p>Vous pouvez nous contacter dans ce numéro:&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">0123456789</a></p>
-        <p>pour l'occalisation de notre restaurant,vous la trouverai ici:&nbsp;&nbsp;<a href="#">www.Cooking
-                Expert.com</a></p>
-        <p>Et vous pouverz voir notre profil via : </p><br>
-        <li><a href="#"><img src="instagram.png"></a><br><br>
-            <a href="#">@Cooking_Experts</a></li>
-        <li><a href="#"><img src="facebook.jpg"></a><br><br>
-            <a href="#">Cooking Experts</a></li>
-        <li><a href="#"><img src="tiktok.jpg"></a><br><br>
-            <a href="#">Cooking Experts_Maroc</a></li>
-        <li><a href="#"><img src="youtube.png"></a><br><br>
-            <a href="#">Cooking_Experts</a></li>
+        <p>Vous pouvez nous contacter dans ce numéro:&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">0123456789</a><br><br>Pour
+            l'occalisation de notre restaurant, vous la trouverez ici:&nbsp;&nbsp;<a href="#">www.Cooking
+                Expert.com</a><br><br>Et vous pouvez voir notre profil via :</p>
+        <ul style="padding: 0; display: flex; justify-content: center;">
+            <li><a href="#"><img src="instagram.png" alt="Instagram"></a><br>
+                <a href="#">@Cooking_Experts</a>
+            </li>
+            <li><a href="#"><img src="facebook.jpg" alt="Facebook"></a><br>
+                <a href="#">Cooking Experts</a>
+            </li>
+            <li><a href="#"><img src="tiktok.jpg" alt="TikTok"></a><br>
+                <a href="#">Cooking Experts_Maroc</a>
+            </li>
+            <li><a href="#"><img src="youtube.png" alt="YouTube"></a><br>
+                <a href="#">Cooking_Experts</a>
+            </li>
+        </ul>
+        <p>Voici une petite vidéo concernant notre restaurant :</p>
+        <video controls autoplay>
+            <source src="My video.mp4" type="video/mp4">
+        </video>
     </form>
 </body>
 
